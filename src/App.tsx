@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
-import logo from './logo.png';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import logo from './logo.png'; // Ensure you have a logo.png file in your project
+import { HomePage } from './pages/Home';
+import { GetInvolvedPage } from './pages/GetInvolved';
+import { AboutPage } from './pages/About';
 import { WorkPage } from './pages/Work';
-import { 
-  Heart, 
-  Users, 
-  Home, 
-  GraduationCap, 
-  Briefcase, 
-  ChevronDown, 
+import { BlogPage } from './pages/Blog';
+import {
+  Heart,
+  Users,
+  Home,
+  GraduationCap,
+  Briefcase,
+  ChevronDown,
   Menu,
   X,
   Facebook,
@@ -15,9 +20,8 @@ import {
   Instagram,
   Mail,
   Phone,
-  MapPin
+  MapPin,
 } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -28,14 +32,16 @@ function App() {
       <nav className="bg-white shadow-sm fixed w-full z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
-            <div className="flex items-center"><img 
+            <div className="flex items-center">
+               <img 
                 className="h-8 w-auto" 
-                src="/logo.png" 
+                src="{logo}" 
                 alt="RuralAid Logo" 
               />
               <span className="ml-2 text-xl font-bold text-gray-900">RuralAid</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
+            
                <Link to="/about" className="text-gray-700 hover:text-orange-600">About</Link>
                             <Link to="/work" className="text-gray-700 hover:text-orange-600">Our Work</Link>
                             <Link to="/get-involved" className="text-gray-700 hover:text-orange-600">Get Involved</Link>
