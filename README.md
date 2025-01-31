@@ -76,7 +76,7 @@ The RuralAid India website is designed to be **culturally resonant**, **user-fri
 
 ## **Technology Stack**  
 ### **Frontend**  
-- **Languages**: HTML, CSS, JavaScript  
+- **Languages**: HTML, CSS, JavaScript, TypeScript
 - **Frameworks**: React.js, Bootstrap  
 - **Design Tools**: Figma, Adobe XD  
 
