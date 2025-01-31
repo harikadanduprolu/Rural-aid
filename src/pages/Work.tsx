@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {Layout} from '../components/Layout';
 import { ChevronRight, GraduationCap, Heart, Home as HomeIcon, Users } from 'lucide-react';
 
 export function WorkPage() {
   return (
+    <Layout>
     <div className="bg-white">
       {/* Hero Section */}
       <div className="bg-orange-50 py-24">
@@ -212,5 +214,6 @@ export function WorkPage() {
         </div>
       </div>
     </div>
+    </Layout>
   );
 }

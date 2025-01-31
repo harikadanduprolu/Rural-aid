@@ -1,9 +1,11 @@
 import React from 'react';
+import {Layout} from '../components/Layout';
 import { Link } from 'react-router-dom';
 import { Calendar, User, ChevronRight } from 'lucide-react';
 
 export function BlogPage() {
   return (
+    <Layout>
     <div className="bg-white">
       {/* Hero Section */}
       <div className="bg-orange-50 py-24">
@@ -216,5 +218,6 @@ export function BlogPage() {
         </div>
       </div>
     </div>
+    </Layout>
   );
 }

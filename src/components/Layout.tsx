@@ -54,7 +54,7 @@ export function Layout({ children }: LayoutProps) {
             <div className="flex items-center">
               <Link 
                 to="/" 
-                className="flex items-center focus:outline-none focus:ring-2 focus:ring-orange-600 rounded"
+                className="flex items-center focus:outline-none "
                 aria-label="Home"
               >
                 <Heart className="h-8 w-8 text-orange-600" />
@@ -68,7 +68,7 @@ export function Layout({ children }: LayoutProps) {
                 <Link
                   key={link.to}
                   to={link.to}
-                  className="px-3 py-2 text-gray-700 hover:text-orange-600 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-orange-600"
+                  className="px-3 py-2 text-gray-700 hover:text-orange-600  transition-colors duration-200 "
                 >
                   {link.name}
                 </Link>
