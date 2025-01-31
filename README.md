@@ -1,4 +1,4 @@
-RuralAid India - README File
+**RuralAid India - README File**
 Welcome to RuralAid India, a platform dedicated to empowering rural communities by bridging the gap between those who want to help and those who need support. This README provides an overview of the project, its features, and how you can contribute to its mission of fostering dignity, resilience, and hope in rural India.
 
 Table of Contents
